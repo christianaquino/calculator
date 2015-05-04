@@ -14,6 +14,7 @@
 		B5B425781AEEB2DC007C0CFB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5B425761AEEB2DC007C0CFB /* LaunchScreen.xib */; };
 		B5B425841AEEB2DC007C0CFB /* calculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B425831AEEB2DC007C0CFB /* calculatorTests.m */; };
 		B5B4258F1AEEB5E8007C0CFB /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B4258E1AEEB5E8007C0CFB /* CalculatorViewController.m */; };
+		B5D53F9B1AF7F2F200730D01 /* Calculadora.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D53F9A1AF7F2F200730D01 /* Calculadora.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		B5B425831AEEB2DC007C0CFB /* calculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = calculatorTests.m; sourceTree = "<group>"; };
 		B5B4258D1AEEB5E8007C0CFB /* CalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
 		B5B4258E1AEEB5E8007C0CFB /* CalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
+		B5D53F991AF7F2F200730D01 /* Calculadora.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculadora.h; sourceTree = "<group>"; };
+		B5D53F9A1AF7F2F200730D01 /* Calculadora.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculadora.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				B5B425671AEEB2DC007C0CFB /* Supporting Files */,
 				B5B4258D1AEEB5E8007C0CFB /* CalculatorViewController.h */,
 				B5B4258E1AEEB5E8007C0CFB /* CalculatorViewController.m */,
+				B5D53F991AF7F2F200730D01 /* Calculadora.h */,
+				B5D53F9A1AF7F2F200730D01 /* Calculadora.m */,
 			);
 			path = calculator;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 				B5B4256D1AEEB2DC007C0CFB /* AppDelegate.m in Sources */,
 				B5B4258F1AEEB5E8007C0CFB /* CalculatorViewController.m in Sources */,
 				B5B4256A1AEEB2DC007C0CFB /* main.m in Sources */,
+				B5D53F9B1AF7F2F200730D01 /* Calculadora.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

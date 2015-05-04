@@ -9,8 +9,9 @@
 #import "CalculatorViewController.h"
 
 @interface CalculatorViewController ()
+
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
-@property (nonatomic) double resultadoParcial;
+
 @end
 
 @implementation CalculatorViewController
@@ -18,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,15 +40,16 @@
 
 - (IBAction)operatorButtonTouched:(UIButton *)sender{
  
-    
     if([sender.titleLabel.text isEqualToString:@"+"]) {
-       self.resultadoParcial = [self.resultLabel.text doubleValue];
-       self.resultLabel.text = @"";
+        
+        [self.delegate calculatorViewController:self sumarOperando:[self.resultLabel.text doubleValue]];
+        
+        self.resultLabel.text = @"";
     }
     
     if([sender.titleLabel.text isEqualToString:@"="]) {
-        self.resultadoParcial += [self.resultLabel.text doubleValue];
-        self.resultLabel.text = [NSString stringWithFormat:@"%.2f",self.resultadoParcial];
+        double resultado = [self.delegate calculatorViewController:self sumarOperando:[self.resultLabel.text doubleValue]];
+        self.resultLabel.text = [NSString stringWithFormat:@"%.2f",resultado];
     }
     
 //    if([sender respondsToSelector:@selector(titleLabel)]){

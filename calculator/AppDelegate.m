@@ -7,16 +7,33 @@
 //
 
 #import "AppDelegate.h"
+#import "Calculadora.h"
+#import "CalculatorViewController.h"
 
 @interface AppDelegate ()
-
+@property (strong, nonatomic) Calculadora *calculadora;
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    //inicializamos y "guardamos" una instancia de calculadora
+    self.calculadora = [Calculadora new];
+    
+    //inicializamos nuestro view controller inicial
+    CalculatorViewController *calculatorViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController];
+    
+    //seteamos a calculadora como el delegate de nuestro view controller
+    calculatorViewController.delegate = self.calculadora;
+    
+    
+    //seteando nuestro view controller como rootViewController de la app
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    self.window.rootViewController = calculatorViewController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
